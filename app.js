@@ -45,6 +45,7 @@ app.use(forgotpassroutes);
 app.use(errorController.get404);
 
 app.get('*', (req, res) => {
+    console.log('Requested url');
     res.sendFile(path.join(__dirname, 'public', `${req.url}`));
 });
 
