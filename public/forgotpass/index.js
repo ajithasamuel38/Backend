@@ -1,4 +1,4 @@
-const link = "http://51.20.40.164:3000/forgotpassword";
+const link = "http://13.49.224.138:3000/forgotpassword";
 const form = document.getElementById('forgotPasswordForm');
 form.addEventListener('submit', sendemaillink);
 async function sendemaillink(event){
