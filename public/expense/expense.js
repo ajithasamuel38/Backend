@@ -1,12 +1,6 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-const link = "http://13.60.65.93:3000/expense/expensetable";
-=======
-const link = "http://localhost:3000/expense/expensetable";
->>>>>>> Stashed changes
-=======
+
 const link = "http://13.49.224.138:3000/expense/expensetable";
->>>>>>> Stashed changes
+
 
 const form = document.getElementById('expense');
 form.addEventListener('submit', addexpense);
@@ -160,30 +154,19 @@ async function deleteExpense(event){
 document.getElementById('rzy_btn').onclick = async function(e){
     try{
         const token = localStorage.getItem('token');
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    const response = await axios .get("http://13.60.65.93:3000/purchase/premium", {headers: {"Authorization": token}});
-=======
-    const response = await axios .get("http://localhost:3000/purchase/premium", {headers: {"Authorization": token}});
->>>>>>> Stashed changes
-=======
+
     const response = await axios .get("http://13.49.224.138:3000/purchase/premium", {headers: {"Authorization": token}});
->>>>>>> Stashed changes
+
     console.log(response);
     var options = {
         "key": response.data.key_id,
         "order_id": response.data.order.id,
         "handler": async function (response){
             try {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                await axios.post("http://13.60.65.93:3000/purchase/update-premium-status", {
-=======
-                await axios.post("http://localhost:3000/purchase/update-premium-status", {
->>>>>>> Stashed changes
-=======
+                
+
                 await axios.post("http://13.49.224.138:3000/purchase/update-premium-status", {
->>>>>>> Stashed changes
+
                     order_id: options.order_id,
                     payment_id: response.razorpay_payment_id
                 }, { headers: { "Authorization": token } });
@@ -218,15 +201,9 @@ function hidePremiumButton() {
     
     if (premiumButton && token) {
         
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        axios.get("http://13.60.65.93:3000/purchase/check-premium-status", { headers: { "Authorization": token } })
-=======
-        axios.get("http://localhost:3000/purchase/check-premium-status", { headers: { "Authorization": token } })
->>>>>>> Stashed changes
-=======
+
         axios.get("http://13.49.224.138:3000/purchase/check-premium-status", { headers: { "Authorization": token } })
->>>>>>> Stashed changes
+
             .then(response => {
                 if (response.data.isPremium) {
                     
@@ -252,15 +229,9 @@ async function showLeaderBoard(){
     inputElement.value= 'Show LeaderBoard';
     inputElement.onclick = async()=>{
         const token = localStorage.getItem('token');
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        const response = await axios.get("http://13.60.65.93:3000/premium/showleaderboard", { headers: { "Authorization": token } });
-=======
-        const response = await axios.get("http://localhost:3000/premium/showleaderboard", { headers: { "Authorization": token } });
->>>>>>> Stashed changes
-=======
+
         const response = await axios.get("http://13.49.224.138:3000/premium/showleaderboard", { headers: { "Authorization": token } });
->>>>>>> Stashed changes
+
         console.log(response);
         var leaderboardElem = document.getElementById('leaderboard');
         leaderboardElem.innerHTML = '<h1>Leader Board</h1>';
@@ -281,15 +252,9 @@ async function showLeaderBoard(){
 }
 
 async function download(token){
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    await axios.get("http://13.60.65.93:3000/download", { headers: { "Authorization": token } })
-=======
-    await axios.get("http://localhost:3000/download", { headers: { "Authorization": token } })
->>>>>>> Stashed changes
-=======
+
     await axios.get("http://13.49.224.138:3000/download", { headers: { "Authorization": token } })
->>>>>>> Stashed changes
+
     .then((response) =>{
         if((response.status===200)){
           
@@ -311,15 +276,9 @@ async function download(token){
 }
 
 async function previousFiles(token){
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            await axios.get("http://13.60.65.93:3000/download/fileUrl", { headers: { "Authorization": token } }).then((response)=>{
-=======
-            await axios.get("http://localhost:3000/download/fileUrl", { headers: { "Authorization": token } }).then((response)=>{
->>>>>>> Stashed changes
-=======
+
             await axios.get("http://13.49.224.138:3000/download/fileUrl", { headers: { "Authorization": token } }).then((response)=>{
->>>>>>> Stashed changes
+
             console.log(response.data);
             const previousFiles = response.data;
             const fileListElement = document.getElementById('previousDownloads');

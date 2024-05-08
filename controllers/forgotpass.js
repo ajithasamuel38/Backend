@@ -38,15 +38,9 @@ const forgotpassword = async (req, res) => {
                     to: receivers,
                     subject: 'Sending with SendGrid is Fun',
                     textContent: 'and easy to do anywhere, even with Node.js',
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                    htmlContent: `<a href="http://13.60.65.93:3000/resetpassword/${id}">Reset password</a>`
-=======
-                    htmlContent: `<a href="http://localhost:3000/resetpassword/${id}">Reset password</a>`
->>>>>>> Stashed changes
-=======
+
                     htmlContent: `<a href="http://13.49.224.138:3000/resetpassword/${id}">Reset password</a>`
->>>>>>> Stashed changes
+
                 }).then((response) => { 
                 return res.status(202).json({message: 'Link to reset password sent to your mail ', sucess: true})
 
