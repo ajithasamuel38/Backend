@@ -22,7 +22,9 @@ async function postuserdetails(event){
         clearForm();
        
         console.log(response);
-      
+
+
+      window.location.href = '/loginpage/login.html';
     }
     catch(err){
         console.log(err);
