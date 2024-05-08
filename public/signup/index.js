@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 const link = "http://13.60.65.93:3000/user/signup";
+=======
+const link = "http://localhost:3000/user/signup";
+>>>>>>> Stashed changes
 const form = document.getElementById('signup');
 form.addEventListener('submit', postuserdetails);
 const errormessage = document.getElementById('error-message');

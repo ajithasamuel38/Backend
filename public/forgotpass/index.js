@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 const link = "http://13.60.65.93:3000/forgotpassword";
+=======
+const link = "http://localhost:3000/forgotpassword";
+>>>>>>> Stashed changes
 const form = document.getElementById('forgotPasswordForm');
 form.addEventListener('submit', sendemaillink);
 async function sendemaillink(event){
