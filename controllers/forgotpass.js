@@ -33,6 +33,7 @@ const forgotpassword = async (req, res) => {
                     
                 console.log(sender, receivers);
                 console.log(apiKey);
+                console.log(sender);
                 tranEmailApi.sendTransacEmail({
                     sender,
                     to: receivers,
