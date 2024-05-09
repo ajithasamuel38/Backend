@@ -19,7 +19,7 @@ async function postuserdetails(event){
     try{
         const response = await axios.post(link, postObj);
 
-        clearForm();
+        //clearForm();
        
         console.log(response);
 
