@@ -1,60 +1,82 @@
-/* Expense list */
-#addedexpense {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #addedexpense li {
-    margin-bottom: 10px;
-  }
-  
-  /* Delete button */
-  .delete {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  .delete:hover {
-    background-color: darkred;
-  }
-  
-  /* Pagination buttons */
-  #paginationButtons {
-    margin-top: 20px;
-  }
-  
-  #paginationButtons button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    margin-right: 5px;
-    cursor: pointer;
-  }
-  
-  #paginationButtons button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Leaderboard */
-  #leaderboard {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #leaderboard li {
-    margin-bottom: 10px;
-  }
-  
-  /* Previous downloads */
-  #previousDownloads {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #previousDownloads li {
-    margin-bottom: 10px;
-  }
+#expense {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+#expense input[type="number"],
+#expense input[type="text"],
+#expense select {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#expense button[type="submit"] {
+ 
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#expense button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* CSS for Expenses Per Page Selection */
+#expensesPerPage {
+  margin-bottom: 20px;
+}
+
+/* CSS for Premium Membership Button */
+#rzy_btn {
+  background-color: #008CBA;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#rzy_btn:hover {
+  background-color: #006FAC;
+}
+
+/* CSS for Premium Message */
+#premiumMessage {
+  display: none;
+  color: green;
+}
+
+/* CSS for Expense List */
+#expenseList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS for Pagination Buttons */
+#paginationButtons {
+  margin-bottom: 20px;
+}
+
+/* CSS for Leaderboard */
+#leaderboard {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS for Previous Downloads */
+#previousDownloads {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
