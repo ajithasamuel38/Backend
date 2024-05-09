@@ -1,82 +1,62 @@
-#expense {
-  margin-bottom: 20px;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
   padding: 20px;
-  background-color: #f9f9f9;
   border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Adjust width as needed */
+  text-align: center; /* Center the content */
 }
 
-#expense input[type="number"],
-#expense input[type="text"],
-#expense select {
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-#expense button[type="submit"] {
- 
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#expense button[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-/* CSS for Expenses Per Page Selection */
-#expensesPerPage {
-  margin-bottom: 20px;
-}
-
-/* CSS for Premium Membership Button */
-#rzy_btn {
-  background-color: #008CBA;
-  color: white;
-  padding: 14px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#rzy_btn:hover {
-  background-color: #006FAC;
-}
-
-/* CSS for Premium Message */
-#premiumMessage {
-  display: none;
-  color: green;
-}
-
-/* CSS for Expense List */
-#expenseList {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* CSS for Pagination Buttons */
-#paginationButtons {
-  margin-bottom: 20px;
-}
-
-/* CSS for Leaderboard */
-#leaderboard {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* CSS for Previous Downloads */
+#expense,
+#expensesPerPage,
+#paginationButtons,
+#leaderboard,
 #previousDownloads {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  margin-top: 20px; /* Add space between sections */
+}
+
+#expense {
+  background-color: #e6f7ff; /* Light blue */
+}
+
+#rzy_btn {
+  background-color: #ffa64d; /* Orange */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px; /* Add space */
+}
+
+#premiumMessage {
+  color: green;
+  margin-top: 10px;
+}
+
+#expensesPerPage {
+  background-color: #ffe6cc; /* Light orange */
+}
+
+#paginationButtons {
+  background-color: #ccffcc; /* Light green */
+}
+
+#leaderboard {
+  background-color: #f2f2f2; /* Light grey */
+}
+
+#previousDownloads {
+  background-color: #ffccff; /* Light pink */
 }
