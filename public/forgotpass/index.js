@@ -1,5 +1,5 @@
 
-const link = "http://13.49.224.138:3000/forgotpassword";
+const link = "http://13.60.65.93:3000/forgotpassword";
 
 const form = document.getElementById('forgotPasswordForm');
 form.addEventListener('submit', sendemaillink);

@@ -1,0 +1,124 @@
+#expense {
+  margin: 20px auto; /* Center the form */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  width: 300px; /* Adjust width as needed */
+}
+
+#expense input[type="number"],
+#expense input[type="text"],
+#expense select {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%; /* Full width */
+}
+
+#expense button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; /* Full width */
+}
+
+#expense button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* CSS for the Premium Membership Button */
+#rzy_btn {
+  margin: 20px auto; /* Center the button */
+  background-color: #5ac9ee;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block; /* Ensure it's on a new line */
+}
+
+#rzy_btn:hover {
+  background-color: #006FAC;
+}
+
+/* CSS for the Premium Message */
+#premiumMessage {
+  display: none;
+  color: green;
+  margin: 10px auto; /* Center the message */
+}
+
+/* CSS for the Expense List */
+#expenseList {
+  margin-top: 20px;
+  background-color: #fff; /* White background */
+  padding: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width */
+}
+
+#expenseList li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* Add border between items */
+}
+
+/* CSS for the Pagination Buttons */
+#paginationButtons {
+  margin-top: 20px;
+}
+
+#paginationButtons button {
+  background-color: #ccffcc; /* Light green */
+  color: #000; /* Black text */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px; /* Add space between buttons */
+}
+
+/* CSS for the Leaderboard */
+#leaderboard {
+  margin-top: 20px;
+  background-color: #f2f2f2; /* Light grey */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width */
+}
+
+#leaderboard h1 {
+  margin-bottom: 10px; /* Add space below heading */
+}
+
+#leaderboard li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* Add border between items */
+}
+
+/* CSS for the Previous Downloads */
+#previousDownloads {
+  margin-top: 20px;
+  background-color: #ffccff; /* Light pink */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width */
+}
+
+#previousDownloads h2 {
+  margin-bottom: 10px; /* Add space below heading */
+}
+
+#previousDownloads li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* Add border between items */
+}

@@ -1,5 +1,5 @@
 
-const link = "http://13.49.224.138:3000/expense/expensetable";
+const link = "http://13.60.65.93:3000/expense/expensetable";
 
 
 const form = document.getElementById('expense');
@@ -155,7 +155,7 @@ document.getElementById('rzy_btn').onclick = async function(e){
     try{
         const token = localStorage.getItem('token');
 
-    const response = await axios .get("http://13.49.224.138:3000/purchase/premium", {headers: {"Authorization": token}});
+    const response = await axios .get("http://13.60.65.93:3000/purchase/premium", {headers: {"Authorization": token}});
 
     console.log(response);
     var options = {
@@ -165,7 +165,7 @@ document.getElementById('rzy_btn').onclick = async function(e){
             try {
                 
 
-                await axios.post("http://13.49.224.138:3000/purchase/update-premium-status", {
+                await axios.post("http://13.60.65.93:3000/purchase/update-premium-status", {
 
                     order_id: options.order_id,
                     payment_id: response.razorpay_payment_id
@@ -202,7 +202,7 @@ function hidePremiumButton() {
     if (premiumButton && token) {
         
 
-        axios.get("http://13.49.224.138:3000/purchase/check-premium-status", { headers: { "Authorization": token } })
+        axios.get("http://13.60.65.93:3000/purchase/check-premium-status", { headers: { "Authorization": token } })
 
             .then(response => {
                 if (response.data.isPremium) {
@@ -230,7 +230,7 @@ async function showLeaderBoard(){
     inputElement.onclick = async()=>{
         const token = localStorage.getItem('token');
 
-        const response = await axios.get("http://13.49.224.138:3000/premium/showleaderboard", { headers: { "Authorization": token } });
+        const response = await axios.get("http://13.60.65.93:3000/premium/showleaderboard", { headers: { "Authorization": token } });
 
         console.log(response);
         var leaderboardElem = document.getElementById('leaderboard');
@@ -253,7 +253,7 @@ async function showLeaderBoard(){
 
 async function download(token){
 
-    await axios.get("http://13.49.224.138:3000/download", { headers: { "Authorization": token } })
+    await axios.get("http://13.60.65.93:3000/download", { headers: { "Authorization": token } })
 
     .then((response) =>{
         if((response.status===200)){
@@ -277,7 +277,7 @@ async function download(token){
 
 async function previousFiles(token){
 
-            await axios.get("http://13.49.224.138:3000/download/fileUrl", { headers: { "Authorization": token } }).then((response)=>{
+            await axios.get("http://13.60.65.93:3000/download/fileUrl", { headers: { "Authorization": token } }).then((response)=>{
 
             console.log(response.data);
             const previousFiles = response.data;
