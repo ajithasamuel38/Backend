@@ -202,7 +202,7 @@ function hidePremiumButton() {
     if (premiumButton && token) {
         
 
-        axios.get("http://13.60.65.93:3000/purchase/check-premium-status", { headers: { "Authorization": token } })
+        axios.get("http://13.51.69.208:3000/purchase/check-premium-status", { headers: { "Authorization": token } })
 
             .then(response => {
                 if (response.data.isPremium) {
@@ -230,7 +230,7 @@ async function showLeaderBoard(){
     inputElement.onclick = async()=>{
         const token = localStorage.getItem('token');
 
-        const response = await axios.get("http://13.60.65.93:3000/premium/showleaderboard", { headers: { "Authorization": token } });
+        const response = await axios.get("http://13.51.69.208:3000/premium/showleaderboard", { headers: { "Authorization": token } });
 
         console.log(response);
         var leaderboardElem = document.getElementById('leaderboard');
