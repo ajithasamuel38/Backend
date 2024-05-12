@@ -10,7 +10,7 @@ async function sendemaillink(event){
     }
    await axios.post(link, mailobj).then((response) =>{
     if(response.status === 202){
-        document.body.innerHTML += '<div style="color:red;">Mail Successfuly sent <div>'
+        document.body.innerHTML += '<div style="color:blue;">Mail Successfuly sent <div>'
     } else {
         throw new Error('Something went wrong!!!')
     }
