@@ -1,5 +1,5 @@
 
-const link = "http://13.60.65.93:3000/user/signup";
+const link = "http://13.51.69.208:3000/user/signup";
 
 const form = document.getElementById('signup');
 form.addEventListener('submit', postuserdetails);
