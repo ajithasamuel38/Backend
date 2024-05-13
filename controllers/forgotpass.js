@@ -36,7 +36,7 @@ const forgotpassword = async (req, res) => {
                 tranEmailApi.sendTransacEmail({
                     sender,
                     to: receivers,
-                    subject: 'Sending with SendGrid is Fun',
+                    subject: 'Reset Password Now',
                     textContent: 'and easy to do anywhere, even with Node js',
 
                     htmlContent: `<a href="http://13.51.69.208:3000/resetpassword/${id}">Reset password</a>`
