@@ -277,7 +277,7 @@ async function download(token){
 
 async function previousFiles(token){
 
-            await axios.get("http://13.60.65.93:3000/download/fileUrl", { headers: { "Authorization": token } }).then((response)=>{
+            await axios.get("http://13.51.69.208:3000/download/fileUrl", { headers: { "Authorization": token } }).then((response)=>{
 
             console.log(response.data);
             const previousFiles = response.data;

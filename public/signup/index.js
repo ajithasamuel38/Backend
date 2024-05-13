@@ -21,7 +21,7 @@ async function postuserdetails(event){
     try{
         const response = await axios.post(link, postObj);
 
-        clearForm();
+        window.location.href = '/loginpage/login.html';
        
         console.log(response);
       
