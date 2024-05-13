@@ -37,7 +37,7 @@ const forgotpassword = async (req, res) => {
                     sender,
                     to: receivers,
                     subject: 'Sending with SendGrid is Fun',
-                    textContent: 'and easy to do anywhere, even with Node.js',
+                    textContent: 'and easy to do anywhere, even with Node js',
 
                     htmlContent: `<a href="http://13.51.69.208:3000/resetpassword/${id}">Reset password</a>`
 
