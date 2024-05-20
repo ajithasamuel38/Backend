@@ -9,7 +9,6 @@ const UserS3service = require('../services/S3services');
 
 exports.download = async (req, res)=>{
     try{ 
-        console.log(req.user);
     const expenses = await Userservice.userservices(req);
     console.log(expenses);
     const id = req.user.id;
@@ -107,9 +106,10 @@ exports.getexpense = async (req, res, next) => {
 };
 
 exports.deleteexpense = async(req, res, next) =>{
-    const t = await sequelize.transaction();
+    
     
     try {
+        const t = await sequelize.transaction();
         const id = req.params.id;
 
         const [expensetodelete, user] = await Promise.all([
